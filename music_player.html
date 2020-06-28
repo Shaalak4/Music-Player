@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- bootstrap -->
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- google fonts -->
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <form>
+            <br>
+            <br>
+            <div class="bg-info text-white">
+            <div class="form-group">
+              <br>
+              <label for="song-name">Song Name</label>
+              <input type="text" class="form-control" id="song-name" required />
+            </div>
+            <div class="form-group">
+              <label for="song-link">Song Link</label>
+              <input type="text" class="form-control" id="song-link" required />
+              <small>1.test link : ./Starboy.mp3</small><br>
+              <small>2.test link : ./rollin.mp3</small><br>
+              <small>3.test link : ./wonderwall.mp3</small>
+            </div>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              id="submit"
+              onclick="addSong()"
+            >
+              Add Song
+            </button>
+            <br>
+            <br>
+          </form>
+          </div>
+        </div>
+        <div class="col-6">
+          <h1>My Playlist</h1>
+          <ul class="list-group" id="song-list"></ul>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
